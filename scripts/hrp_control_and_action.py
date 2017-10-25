@@ -42,7 +42,7 @@ class SmartwatchControl(object):
             r = rospy.Rate(self.update_rate) # Hz
             while not rospy.is_shutdown():
                 r.sleep()
-        except rospy.ROSInterruptException:
+        except rospy.ROSInterruptException: # CHECK IF THIS IS WORKING
             self.update(0,0,0)
        #     pass
       #  finally:
